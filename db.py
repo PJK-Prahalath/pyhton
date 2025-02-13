@@ -44,6 +44,11 @@ class database:
         rows = self.cur.fetchall()
         #print(rows)
         return rows
+    def fetchview(self):
+        self.cur.execute("SELECT * from v1")
+        rows = self.cur.fetchall()
+        #print(rows)
+        return rows
 
 
     def delete(self,id):

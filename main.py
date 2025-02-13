@@ -37,6 +37,7 @@ def clearAll():
 
 def add_emp():
 
+    clearAll()
     new_window = Toplevel(root)
     new_window.title("Add Employee")
     new_window.geometry("500x500+0+0")
@@ -207,7 +208,7 @@ def update_emp():
             new_window2.config(bg="black")
             new_window2.state("zoomed")
 
-    # Entry frame
+    
             entry_frame = Frame(new_window2, bg="black")
             entry_frame.pack(side=TOP, fill=X, pady=80)
 
